@@ -1,28 +1,6 @@
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 16px;
-}
-
-.header {
-  padding: 20px 0;
-  border-bottom: solid 1px grey;
-}
-
-.nav {
-  display: flex;
-  gap: 20px;
-}
-
-.link {
-  padding: 8px 16px;
-  border-radius: 4px;
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-}
-
-.activeLink {
-  color: white;
-  background-color: orangered;
+  padding: 0 16px;
+  height: 100vh;
 }

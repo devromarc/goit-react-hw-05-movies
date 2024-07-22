@@ -6,7 +6,7 @@ axios.defaults.baseURL = 'https://api.themoviedb.org/3/';
 // /trending/get-trending a list of the most popular movies for today to create a collection on the home page page.
 export const getTrending = async () => {
   const response = await axios.get(`trending/movie/day?api_key=${API_KEY}`);
-  return response.data;
+  return response.data.results;
 };
 
 // /search/search-movies keyword search for a movie on the movies page.
