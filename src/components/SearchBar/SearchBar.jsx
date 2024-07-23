@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './SearchBar.module.css';
 import { HiSearch } from 'react-icons/hi';
+// https://github.com/nkbt/react-debounce-input
 import { DebounceInput } from 'react-debounce-input';
 
 export const SearchBar = ({ onChange, value }) => {
