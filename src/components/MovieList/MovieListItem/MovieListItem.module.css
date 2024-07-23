@@ -5,12 +5,12 @@
 }
 
 .link {
-  color: #000;
+  color: #eee;
   text-decoration: none;
   margin: 1px;
 
   &:hover,
   &:focus {
-    color: orangered;
+    color: #00adb5;
   }
 }

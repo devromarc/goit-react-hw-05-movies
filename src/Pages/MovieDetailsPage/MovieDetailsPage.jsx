@@ -3,6 +3,7 @@ import { useParams, Link, Outlet, useLocation } from 'react-router-dom';
 import { getMovieDetails } from '../../services/tmdb-api';
 import { Loader } from '../../components/Loader/Loader';
 import css from './MovieDetailsPage.module.css';
+import Button from 'components/Button/Button';
 
 const MovieDetailsPage = () => {
   const { movieId } = useParams();
@@ -28,7 +29,7 @@ const MovieDetailsPage = () => {
   return (
     <>
       <Link to={backLinkHref}>
-        <button>Go Back</button>
+        <Button btn={' < Go Back'} />
       </Link>
 
       <div className={css.movieDetailsContainer}>
@@ -61,12 +62,12 @@ const MovieDetailsPage = () => {
       <h3 className={css.additionalInfo}>Additional information</h3>
 
       <Link to="cast">
-        <button>Cast</button>
+        <Button btn={'Cast'} />
       </Link>
       <Link to="reviews">
-        <button>Reviews</button>
+        <Button btn={'Reviews'} />
       </Link>
-      <hr />
+      <hr className={css.divider} />
       <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>

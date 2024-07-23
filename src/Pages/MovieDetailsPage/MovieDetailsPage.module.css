@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 30px;
   margin-bottom: 40px;
+  margin-top: 15px;
 
   @media (min-width: 1024px) {
     flex-direction: row;
@@ -31,4 +32,8 @@
 
 .additionalInfo {
   margin-bottom: 20px;
+}
+
+.divider {
+  margin-top: 20px;
 }

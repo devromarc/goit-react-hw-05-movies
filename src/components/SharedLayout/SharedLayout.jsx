@@ -11,6 +11,7 @@ const SharedLayout = () => {
     <>
       <div className={css.container}>
         <Header />
+
         <Suspense fallback={<Loader />}>
           <Outlet />
         </Suspense>
